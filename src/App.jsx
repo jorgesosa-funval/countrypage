@@ -1,13 +1,11 @@
-import { useState } from 'react'
- 
-function App() {
- 
+import Status from "./assets/components/status";
 
+function App() {
   return (
     <>
- 
+      <Status />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
