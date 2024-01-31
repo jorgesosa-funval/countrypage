@@ -55,9 +55,11 @@ function Header() {
     <div style={headerStyle}>
 
       <h2 style={headingStyle}>Found 234 countries</h2>
+      
 
       <div style={inputContainerStyle}>
-        
+
+
         <input type="text" placeholder="Search by Name, Region, Subregion" style={inputStyle} />
         <button style={buttonStyle}></button>
       </div>
