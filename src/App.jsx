@@ -1,9 +1,9 @@
-import React from "react";
-import HeroImage from "./components/HeroImage/HeroImage";
-import Layout from "./components/Layout";
-
+import { useState } from 'react'
+import CountryInfo from './Components/CountryInfo'
+ 
 function App() {
   return (
+ 
     <div className="main-container h-screen">
       <HeroImage>
           <Layout>
@@ -21,6 +21,7 @@ function App() {
       
     </div>
   );
+ 
 }
 
 export default App;
