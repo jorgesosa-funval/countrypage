@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Layout() {
     return (
-        <div className='flex flex-col bg-green-800 mt-[100px] md:h-[800px] md:pb-5 lg:p-4 lg:pb-10'>
+        <div className='flex flex-col bg-green-800   md:h-full md:pb-5 lg:p-4 lg:pb-10'>
             <div className='buscardor flex h-14 bg-red-400 m-2  md:mt-3'>
                 
             </div>

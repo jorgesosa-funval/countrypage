@@ -3,15 +3,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.main-container {
-  @apply w-full h-screen overflow-hidden;
-}
+/* .main-container {
+  @apply w-full h-full overflow-hidden;
+} */
 
-.hero-section {
+/* .hero-section {
   @apply w-full h-full;
 }
-
-body{
+ */
+/* body{
     background-color: #1B1D1F; 
-}
+} */
  
