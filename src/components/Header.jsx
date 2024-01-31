@@ -1,6 +1,6 @@
 import React from 'react';
 
-import imagen from '/public/assets/Search.svg';
+import imagen from '/assets/Search.svg';
 
 function Header() {
   const headerStyle = {
@@ -12,6 +12,7 @@ function Header() {
     alignItems: 'center',
     padding: '10px',
     backgroundColor: '#1B1D1F',
+    width: '100%',
   };
 
   const inputContainerStyle = {

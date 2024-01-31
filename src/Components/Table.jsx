@@ -12,7 +12,7 @@ export function Table() {
   }, []);
 
   return (
-    <table className="table-auto bg-[#282B30] text-[#D2D5DA]">
+    <table className="table-auto bg-[#282B30] text-[#D2D5DA] w-full">
       <thead>
         <tr>
           <th className="px-4 py-2">Flag</th>
