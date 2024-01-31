@@ -1,11 +1,5 @@
-import Status from "./assets/components/status";
-
 function App() {
-  return (
-    <>
-      <Status />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
