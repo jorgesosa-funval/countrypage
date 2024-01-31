@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import CountryDetails from './components/CountryDetails'
+ 
+import React from "react";
+import HeroImage from "./HeroImage/HeroImage";
  
 function App() {
- 
-
   return (
-    <>
-    <CountryDetails/>
-    </>
+ 
+    <div className="main-container">
+      <HeroImage />
+    </div>
   )
+ 
+ 
 }
 
-export default App
+export default App;
