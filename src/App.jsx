@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import { Table } from './Componentes/tabla'
+import React from "react";
+import HeroImage from "./HeroImage/HeroImage";
  
 function App() {
- 
-
   return (
-    <>
- 
-    </>
+
+    <div className="main-container">
+      <HeroImage />
+    </div>
+
   )
+ 
+ 
 }
 
-export default App
+export default App;
