@@ -1,3 +1,4 @@
+ 
 import React from "react";
 import HeroImage from "./HeroImage/HeroImage";
  
@@ -9,8 +10,7 @@ function App() {
     </div>
 
   )
- 
- 
+  
 }
 
 export default App;
