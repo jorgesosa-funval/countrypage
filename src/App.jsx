@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import Header from './assets/components/header'
+import React from "react";
+import HeroImage from "./HeroImage/HeroImage";
  
 function App() {
+  return (
  
 
-  return (
-    <>
-    <Header/>
-    </>
+    <div className="main-container">
+      <HeroImage />
+    </div>
+ 
   )
+  
 }
 
-export default App
+export default App;
