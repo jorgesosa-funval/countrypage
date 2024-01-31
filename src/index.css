@@ -1,3 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+ 
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* .main-container {
+  @apply w-full h-full overflow-hidden;
+} */
+
+/* .hero-section {
+  @apply w-full h-full;
+}
+ */
+/* body{
+    background-color: #1B1D1F; 
+} */
+ 
