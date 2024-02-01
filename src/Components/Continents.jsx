@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //  Hecho pot Raysell, Agradeceme despues! 😏
 
-const RegionFilter = () => {
+const Continents = () => {
 
   const [selectedRegions, setSelectedRegions] = useState([]);
 
@@ -50,4 +50,4 @@ const RegionFilter = () => {
   );
 };
 
-export default RegionFilter;
+export default Continents;
