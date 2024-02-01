@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Header from "../Header";
-import { Table } from "../Table";
+import { Table } from "../../Components/Table";
 import RegionBox from "../RegionBox";
 import Status from "../Status";
 
 import DropDownIcon from "../../assets/Expand_down.svg";
-import RegionFliter from "../Continents";
+import Continents from "../../Components/Continents";
 
 export default function Layout() {
   const [selectedOption, setSelectedOption] = useState("");
@@ -45,7 +45,7 @@ export default function Layout() {
           {/* Raysell */}
 
           <div className="flex  bg-gray-900 flex-wrap h-2/5">
-            <RegionFliter />
+            <Continents />
           </div>
           <div>
             <Status />
@@ -53,7 +53,7 @@ export default function Layout() {
         </div>
 
         {/* Raysell */}
-        <div className="tabla flex m-2 bg-red-950 h-[450px] md:h-full  md:mb-4 md:w-3/4 lg:w-5/6 lg:h-full overflow-y-auto">
+        <div className="tabla flex m-2 bg-red-950 h-[450px] md:h-full  md:mb-4 md:w-3/4 lg:w-5/6 lg:h-full overflow-y-auto text-center">
           <Table />
         </div>
       </div>

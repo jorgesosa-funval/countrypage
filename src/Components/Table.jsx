@@ -24,6 +24,7 @@ export function Table() {
       region: "Americas",
       flag: "https://flagcdn.com/w320/us.png", 
     },
+    // esta parte la puedes comentar si quieres, solo queria si funciona.
   ]);
 
   useEffect(() => {
@@ -43,7 +44,7 @@ export function Table() {
   }, []);
 
   return (
-    <table className="bg-[#282B30] text-[#D2D5DA] w-full overflow-y-auto">
+    <table className="bg-[#282B30] text-[#D2D5DA] w-full">
       <thead>
         <tr>
           <th className="px-4 py-2">Flags</th>
@@ -58,7 +59,7 @@ export function Table() {
           <tr key={row.country}>
             <td className=" px-4 py-2">
               <img
-                className="w-[70px] h-[50px]  rounded border-solid border-[3px] border-gray-400"
+                className="w-[70px] h-[50px] rounded border-solid border-[3px] border-gray-400"
                 src={row.flag}
                 alt="flag"
               />
