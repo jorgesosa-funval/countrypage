@@ -1,34 +1,62 @@
-import React from 'react'
-import Header from '../Header'
-import { Table } from '../Table'
-import RegionBox from '../RegionBox'
-import Status from '../Status'
+import React, { useState } from "react";
+import Header from "../Header";
+import { Table } from "../../Components/Table";
+import RegionBox from "../RegionBox";
+import Status from "../Status";
+
+import DropDownIcon from "../../assets/Expand_down.svg";
+import Continents from "../../Components/Continents";
 
 export default function Layout() {
-    return (
-        <div className='flex flex-col bg-green-800   md:h-full md:pb-5 lg:p-4 lg:pb-10'>
-            <div className='buscardor flex h-14 bg-red-400 m-2  md:mt-3'>
-                <Header />
-            </div>
-            <div className='flex flex-col md:flex-row md:h-full'>
-                <div className='filtros flex m-2 bg-gray-900 h-44 md:h-full  md:mb-4 md:w-1/4 lg:w-1/6 lg:h-full flex-col'>
-                    <div className='w-full h-10'>
+  const [selectedOption, setSelectedOption] = useState("");
 
-                    </div>
-                    <div className="flex justify-center p-4  bg-gray-900 flex-wrap h-2/5">
-                        <RegionBox name="América" />
-                        <RegionBox name="Antarctic" />
-                        <RegionBox name="Africa" />
-                        <RegionBox name="Asia" />
-                        <RegionBox name="Europe" />
-                        <RegionBox name="Oceanía" />
-                    </div>
-                    <Status/>
-                </div>
-                <div className='tabla flex m-2 bg-red-950 h-[450px] md:h-full  md:mb-4 md:w-3/4 lg:w-5/6 lg:h-full'>
-                    <Table />
-                </div>
+  const handleSelectChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
+  return (
+    <div className="flex flex-col bg-green-800   md:h-full md:pb-5 lg:p-4 lg:pb-10">
+      <div className="buscardor flex h-14 bg-red-400 m-2  md:mt-3">
+        <Header />
+      </div>
+      <div className="flex flex-col md:flex-row md:h-full">
+        <div className="filtros flex m-2 bg-gray-900 h-44 md:h-full  md:mb-4 md:w-1/4 lg:w-1/6 lg:h-full flex-col">
+          {/* Raysell */}
+          <div className="my-4">
+            <label
+              htmlFor="mySelect"
+              className="block text-gray-700 text-sm font-bold mb-2 px-2"
+            >
+              Sort by
+            </label>
+            <div className="relative px-2">
+              <select
+                id="mySelect"
+                value={selectedOption}
+                onChange={handleSelectChange}
+                className="border rounded px-3 p-1 appearance-none w-[100%] bg-gray-900 border-gray-700 text-gray-700 "
+              >
+                <option value="">Population</option>
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
+                <img src={DropDownIcon} alt="Drop" />
+              </div>
             </div>
+          </div>
+          {/* Raysell */}
+
+          <div className="flex  bg-gray-900 flex-wrap h-2/5">
+            <Continents />
+          </div>
+          <div>
+            <Status />
+          </div>
         </div>
-    )
+
+        {/* Raysell */}
+        <div className="tabla flex m-2 bg-red-950 h-[450px] md:h-full  md:mb-4 md:w-3/4 lg:w-5/6 lg:h-full overflow-y-auto text-center">
+          <Table />
+        </div>
+      </div>
+    </div>
+  );
 }

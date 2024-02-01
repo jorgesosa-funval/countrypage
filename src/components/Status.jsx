@@ -2,9 +2,9 @@ import React from "react";
 
 const Status = () => {
   return (
-    <div className="ml-6 mt-5 text-black font-medium max-w-[400px] max-h-[180px]">
+    <div className="ml-6 mt-5 text-gray-700 font-medium max-w-[400px] max-h-[180px] ">
       <h5>Status</h5>
-      <div class="flex items-center mb-4 mt-4">
+      <div class="flex items-center mb-4 mt-4 ">
         <input
           id="default-checkbox"
           type="checkbox"
@@ -13,7 +13,7 @@ const Status = () => {
         />
         <label
           for="default-checkbox"
-          class="ms-2 text-sm font-medium text-black"
+          class="ms-2 text-sm font-medium text-white"
         >
           Members of the Uniteds Nations
         </label>
@@ -27,7 +27,7 @@ const Status = () => {
         />
         <label
           for="default-checkbox"
-          class="ms-2 text-sm font-medium text-black "
+          class="ms-2 text-sm font-medium text-white "
         >
           Indepent
         </label>
